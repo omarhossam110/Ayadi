@@ -1,0 +1,43 @@
+body{
+    background-image:linear-gradient(90deg,rgba(0, 0, 0, 0.7), 
+    rgba(0, 0, 0, 0.7)), url(../_images/1.jpeg);
+}
+
+::-webkit-scrollbar{
+   width: 5px;
+}
+::-webkit-scrollbar-track{
+   border: 1px solid rgb(161, 161, 161);
+   background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+background-color: var(--main);
+border-radius: 15px;
+}
+
+
+/* Start Scrolltop */
+
+#scroll-top {
+    width:50px;
+    height:50px;
+    background-color:var(--main);
+    text-align:center;
+    position:fixed;
+    right:15px;
+    bottom:10px;
+    z-index:9999;
+    display:none;
+    cursor:pointer;
+    border-radius: 50%;
+    
+}
+#scroll-top .svg-inline--fa {
+    color:#fff; 
+}
+
+#scroll-top .svg-inline--fa:hover{color:var(--main); }
+
+#scroll-top:hover {background-color:#fff; }
+
+/* End Scrolltop */

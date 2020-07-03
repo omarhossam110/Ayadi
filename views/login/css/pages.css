@@ -1,0 +1,73 @@
+
+/* Start Section log in */
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    border: 1px solid rgb(161, 161, 161);
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+ background-color: #0e0a4a;
+ border-radius: 15px;
+}
+
+
+.log-in {
+    background:url('../img/backgound.jpeg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.log-in .fields img{
+    margin-top: 20px;
+    width: 7%;
+}
+.log-in .fields {
+    background:rgba(9,9,9,0.8);
+    min-height:650px;
+    color:#DDD;
+}
+
+/* .log-in p {margin-bottom:40px} */
+
+.log-in textarea {height:108px}
+
+.log-in input[type="text"],
+.log-in input[type="email"],
+.log-in input[type="password"],
+
+.log-in textarea {
+    background:rgba(248,249,250,0.8);
+    color: #212529;
+    border:none;
+}
+
+.log-in .butt{
+    border: none;
+    outline: none;
+    
+}
+.log-in .butt:active{
+    border: none;
+    outline: none;
+}
+.butt a{
+    color: #FFF;
+}
+
+#open {
+    position: absolute;
+    top:75px;
+    right: 40px;
+    font-size:20px;
+    cursor: pointer;
+    border: none;
+    color: black;
+    
+}
+
+
+
+
+
+/* End Section sign in */

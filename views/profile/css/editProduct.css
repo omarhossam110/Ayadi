@@ -1,0 +1,20 @@
+.profile-body .post .image-preview
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #ccc;
+    font-size: 1.7em;
+    border: 1px solid #ccc;
+}
+
+.profile-body .post .image-preview__image
+{
+    display: none;
+}
+
+.profile-content .profile-body .post-area .post-body input[type="file"]
+{
+ display: none;
+}
