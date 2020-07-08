@@ -25,6 +25,9 @@
     --skyBlue:#009AFF;
     --textBlack:#212529;
 }
+html {
+    height: 100%;
+}
 body{
     background: linear-gradient(to bottom,rgba(92,77,66,.7) 0,rgba(92,77,66,.7) 100%),url(../img/backgound.jpeg);
     align-items: center;
@@ -32,7 +35,6 @@ body{
     background-repeat: no-repeat;
     /* background-attachment: scroll; */
     background-size: cover;
-    height: 100%;
 }
 
 

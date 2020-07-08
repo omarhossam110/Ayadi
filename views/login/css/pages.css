@@ -12,10 +12,20 @@
  border-radius: 15px;
 }
 
-
-.log-in {
+html,body {
+    height: 100%;
+}
+body {
     background:url('../img/backgound.jpeg') no-repeat center center fixed;
     background-size: cover;
+}
+.log-in {
+    background-color:rgba(9,9,9,0.8);
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .log-in .fields img{
@@ -23,8 +33,6 @@
     width: 7%;
 }
 .log-in .fields {
-    background:rgba(9,9,9,0.8);
-    min-height:650px;
     color:#DDD;
 }
 
@@ -55,7 +63,7 @@
     color: #FFF;
 }
 
-#open {
+#open, #close {
     position: absolute;
     top:75px;
     right: 40px;
@@ -63,7 +71,12 @@
     cursor: pointer;
     border: none;
     color: black;
-    
+}
+#close {
+    display: none;
+}
+.mt-40px {
+    margin-top: 40px;
 }
 
 
