@@ -8,15 +8,15 @@
 }
 
 
-.home-sidebar ul:first-child {
+/* .home-sidebar ul:first-child {
     border-right: 1px solid #ccc;
-}
+} */
 
 .home-sidebar ul li{
     transition: all 0.5s ease-in-out;
     cursor: pointer;
     list-style: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #f5f5f5;
 }
 .home-sidebar ul li:last-child{
     border-bottom: none;
