@@ -42,11 +42,11 @@ myOpenAye.onclick = function(){
     
      }else if(myPassword.value === '' || myPassword.value == null ){
         
-          myMessage.innerHTML="you must write your password";
+          myMessage.innerHTML="You must Enter Password";
     
      }else if(myInput.value != myPassword.value){
         
-         myMessage.innerHTML="you must confirm your password";
+         myMessage.innerHTML="You Must Confirm Password";
     
      }else{
         location.href ="../category/index.html";
@@ -66,7 +66,7 @@ window.onload = function(){
 
 myName.onfocus = function(){
     'use strict';
-    myMessage.innerHTML = 'please write your name';
+    myMessage.innerHTML = 'Please Write Your Name';
 };
 
 myName.onblur = function(){
@@ -79,7 +79,7 @@ myName.onblur = function(){
 
 myEmail.onfocus = function(){
     'use strict';
-    myMessage.innerHTML = 'please write valid email';
+    myMessage.innerHTML = 'Please Enter an Valid Email';
 };
 
 myEmail.onblur = function(){
@@ -91,7 +91,7 @@ myEmail.onblur = function(){
 
 myPhone.onfocus = function(){
     'use strict';
-    myMessage.innerHTML = 'please write real phone number';
+    myMessage.innerHTML = 'Please Enter Phone Number';
 };
 
 myPhone.onblur = function(){
@@ -103,7 +103,7 @@ myPhone.onblur = function(){
 
 myPassword.onfocus = function(){
     'use strict';
-    myMessage.innerHTML = 'please write your password';
+    myMessage.innerHTML = 'Please Enter your Password';
 };
 
 myPassword.onblur = function(){
@@ -115,7 +115,7 @@ myPassword.onblur = function(){
 
 myInput.onfocus = function(){
     'use strict';
-    myMessage.innerHTML = 'please confirm your password';
+    myMessage.innerHTML = 'Please Confirm your Password';
 };
 
 myInput.onblur = function(){

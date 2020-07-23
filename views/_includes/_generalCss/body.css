@@ -22,30 +22,32 @@ border-radius: 15px;
 /* Start Scrolltop */
 
 #scroll-top {
-    width:50px;
-    height:50px;
+    width:25px;
+    height:25px;
     background-color:var(--main);
     text-align:center;
     position:fixed;
-    right:15px;
-    bottom:10px;
+    right:20px;
+    bottom:15px;
     z-index:9999;
     display:none;
     cursor:pointer;
     border-radius: 50%;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    font-size: 15px;
 }
 #scroll-top .svg-inline--fa {
-    color:#fff; 
+    font-size: 20px;
 }
-
-#scroll-top .svg-inline--fa:hover{color:var(--main); }
-
-#scroll-top:hover {background-color:#fff; }
+#scroll-top:hover {
+    color:var(--main);
+    background-color:#fff; }
 
 /* End Scrolltop */
 
 .btn{
     font-size: 12px;
-    /* font-weight: bold; */
 }

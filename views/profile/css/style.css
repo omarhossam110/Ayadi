@@ -1,6 +1,4 @@
 
-
-
 .profile-background{
     background: url('../img/black-and-white-city-night.png');
     height: 380px;
@@ -17,22 +15,30 @@
     box-shadow: 0 0 0 0.2rem var(--main);
 }
 /* ------------- Start Profile-content   ----------------*/
-.profile-body{
-    margin-top: 20px;
-}
-
-.profile-content{
-    background-color:var(--white);
-    position: relative;
-    z-index: 3;
-    margin: -63px 80px 0;
-    border-radius: 6px;
-    box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
-}
 
 .personal-info{
     margin: 0 0 2%;
+    background-color:var(--white);
+    position: relative;
+    z-index: 3;
+    border-radius: 6px;
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+    position: relative;
+}
 
+.personal-info #addProduct
+{
+   position: absolute;
+   bottom: 15px;
+   right: 20px;
+   display: flex;
+   align-items: center;
+   color: var(--black);
+   text-decoration: none;
+}
+.personal-info #addProduct:hover
+{
+    color: var(--main);
 }
 
 .personal-info .under-line{
@@ -158,9 +164,15 @@
 
 
 /* ----------- Start Sidebar-Information!!!! --------------------------------------- */
-
+.sidebar-info {
+    background-color: var(--white);
+    padding: 15px;
+    border-radius: 6px;
+}
+.sidebar-info ul li{
+    border-bottom: 1px solid #f5f5f5;
+}
 .sidebar-info ul:first-child {
-    border-right: 1px solid #ccc;
     cursor: default;
     list-style: none;
 }
@@ -171,6 +183,7 @@
     width: 100%;
     padding: .75rem 1.25rem;
     text-align: left;
+    border: 0;
 }
 
 .sidebar-info ul:first-child li:nth-child(2) button{
@@ -232,46 +245,21 @@
     border-top-left-radius: 5px;
     /* padding-left:5px; */
 }
-/* ----------- END Sidebar-Information!!!! --------------------------------------- */
-
-
-.profile-body #addProduct
-{
-    width: 91%;
-    margin: 0 30px;
-}
-
+/* ----------- END Sidebar-Information --------------------------------------- */
 
 /* --------------------------
 
-
-
-
-
-
      editProduct.css
 
-
-
-
-
-
-
-
        --------------------          */
-
-
-
-.profile-content .profile-body .post-area{
-    /* background: #ccc; */
-    /* background: rgba(0, 0, 0, 0.1); */
+/* ----------- Start Profile Body --------------------------------------- */
+.profile-body .post-area{
     position: relative;
     z-index: 3;
-    margin: 0 30px 15px;
-    border-radius: 6px;
+    margin: 15px 30px 15px 0;
 }
 
-.profile-content .profile-body .post-area .post-body{
+.profile-body .post-area .post-body{
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -281,37 +269,45 @@
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.325);
     border-radius: .25rem;
     width: 100%;
     padding: 10px;  
-    box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+    /* box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2); */
 }
 
-.profile-content .profile-body .post-area .post-body .making-post-info,
-.profile-content .profile-body .post-area .post-body .post-info
+.profile-body .post-area .post-body .making-post-info,
+.profile-body .post-area .post-body .post-info
 {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #f5f5f5;
     padding-bottom: 6px;
     margin-bottom: 10px;
+    display: flex;
 }
-.profile-content .profile-body .post-area .post-body .making-post-info span{
+.profile-body .post-area .post-body .making-post-info span{
     cursor: default;
 }
-.profile-content .profile-body .post-area .post-body .post-info a{
+.profile-body .post-area .post-body .post-info a{
     text-decoration: none;
     color: var(--textBlack);
 }
-.profile-content .profile-body .post-area .post-body .making-post-info img,
-.profile-content .profile-body .post-area .post-body .post-info a img
+.profile-body .post-area .post-body .post-info .type-item{
+    background-color: var(--main);
+    color: var(--white);
+    margin: auto;
+    border-radius: 4px;
+    padding: 3px 7px;
+    font-size: 10px;
+}
+.profile-body .post-area .post-body .making-post-info img,
+.profile-body .post-area .post-body .post-info a img
 {
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
 
-.profile-content .profile-body .post-area .post-body .making-post-info span,
-.profile-content .profile-body .post-area .post-body .post-info a span
+.profile-body .post-area .post-body .making-post-info span,
+.profile-body .post-area .post-body .post-info a span
 {
     font-weight: bold;
     border-left: 1px solid #ccc;
@@ -319,52 +315,52 @@
 
 }
 
-.profile-content .profile-body .post-area .post-body .making-post-info a:hover,
-.profile-content .profile-body .post-area .post-body .post-info a:hover
+.profile-body .post-area .post-body .making-post-info a:hover,
+.profile-body .post-area .post-body .post-info a:hover
 {
     color: var(--main);
     cursor: pointer;
 }
-.profile-content .profile-body .post-area .post-body .making-post-info a:focus,
-.profile-content .profile-body .post-area .post-body .post-info a:focus{
+.profile-body .post-area .post-body .making-post-info a:focus,
+.profile-body .post-area .post-body .post-info a:focus{
  outline: none;
  box-shadow: none;
  color: var(--main);
 }
 
-.profile-content .profile-body .post-area .post-body .making-post-info .card,
-.profile-content .profile-body .post-area .post-body .post-info .card
+.profile-body .post-area .post-body .making-post-info .card,
+.profile-body .post-area .post-body .post-info .card
 {
     border: 0;
 }
 
-.profile-content .profile-body .post-area .post-body .post-info .card ul li
+.profile-body .post-area .post-body .post-info .card ul li
 {
     list-style: none;
 }
 
-.profile-content .profile-body .post-area .post-body .making-post-info .card li{
+.profile-body .post-area .post-body .making-post-info .card li{
     position: relative;
     display: block;
     padding: .75rem 1.25rem;
     background-color: #fff;
     border-right: 1px solid #ccc;
 }
-.profile-content .profile-body .post-area .post-body .making-post-info .card li:last-child{
+.profile-body .post-area .post-body .making-post-info .card li:last-child{
     border: none;
 }
 
-.profile-content .profile-body .post-area .post-body .making-post-info .card li input[type="radio"]
+.profile-body .post-area .post-body .making-post-info .card li input[type="radio"]
 {
     display: none;
 }
-.profile-content .profile-body .post-area .post-body .making-post-info .card li label{
+.profile-body .post-area .post-body .making-post-info .card li label{
     
     margin: 0 10px;
     color: #333;
     cursor: pointer;
 }
-.profile-content .profile-body .post-area .post-body .making-post-info .card li span
+.profile-body .post-area .post-body .making-post-info .card li span
 {
     height: 20px;
     width: 20px;
@@ -377,7 +373,7 @@
     margin: 0 6px;
 }
 
-.profile-content .profile-body .post-area .post-body .making-post-info .card li span::after
+.profile-body .post-area .post-body .making-post-info .card li span::after
 {
     content: "";
     height: 8px;
@@ -392,83 +388,85 @@
     transition: 300ms ease-in-out 0s;
 }
 
-.profile-content .profile-body .post-area .post-body .making-post-info .card li input[type="radio"]:checked ~ span:after
+.profile-body .post-area .post-body .making-post-info .card li input[type="radio"]:checked ~ span:after
 {
     transform: translate(-50%,-50%) scale(1);
 }
 
 
-.profile-content .profile-body .post-area .post-body textarea
+.profile-body .post-area .post-body textarea
 {
     margin-left: 20px;
     border:0;
     width: 98%;
     resize: none;
 }
-.profile-content .profile-body .post-area .post-body textarea:focus
+.profile-body .post-area .post-body textarea:focus
 {
    outline: none;
 }
-.profile-content .profile-body .post-area .post-body input
+.profile-body .post-area .post-body input
 {
     margin-left: 20px;
     border: 0;
     border-bottom: 1px solid #ccc ;
     /* text-align: center; */
 }
-.profile-content .profile-body .post-area .post-body input:focus
+.profile-body .post-area .post-body input:focus
 {
   border: 1px solid #a6c7ff;
   outline: none;
 }
-.profile-content .profile-body .post-area .post-body p
+.profile-body .post-area .post-body p
 {
     margin-left: 20px;
     border:0;
 }
 
 
-.profile-content .profile-body .post-area .post-body .photoUpload,
-.profile-content .profile-body .post-area .post-body .post{
+.profile-body .post-area .post-body .photoUpload,
+.profile-body .post-area .post-body .post{
     padding: 5px;
+    margin-top: -20px;
 }
 
-.profile-content .profile-body .post-area .post-body .post-height{
+.profile-body .post-area .post-body .post-height{
     height: 300px;
     width: 100%;
 }
     
-.profile-content .profile-body .post-area .post-body .post img
+.profile-body .post-area .post-body .post img
 {
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 
-.profile-content .profile-body .post-area .post-body .post-actions{
+.profile-body .post-area .post-body .post-actions{
     width: 100%;
-    border-top: 1px solid #212529;
+    /* border-top: 1px solid #212529; */
     margin-top: 5px;
     padding-top: 11px;
 }
 
-.profile-content .profile-body .post-area .post-body .post-actions button{
+.profile-body .post-area .post-body .post-actions button{
     margin-right: 5px ;
     
 }
 
-.profile-content .profile-body .post-area .post-body .post-actions button:focus{
+.profile-body .post-area .post-body .post-actions button:focus{
     outline: none;
     box-shadow: none;
 }
 
-.profile-content .profile-body .post-area .post-body .post-actions button:focus:last-child{
+.profile-body .post-area .post-body .post-actions button:focus:last-child{
     color: #fff;
     background-color: #dc3545;
     border-color: #dc3545;
     padding: 8px;
 }
 
-.profile-content .profile-body .post-area .post-body .post-actions button:focus:first-child{
+.profile-body .post-area .post-body .post-actions button:focus:first-child{
     color: #fff;
     background-color: #28a745;
     border-color: #28a745;
@@ -488,7 +486,7 @@
        
     }
     
-    .profile-content .post-area{
+    .post-area{
         margin-left: 4px;
         margin-top: 20px;
         box-shadow: 5px 5px 10px #ccc;
@@ -504,7 +502,7 @@
     
 }
 
-.profile-content .post-area .post-body .post-actions button{
+.post-area .post-body .post-actions button{
     padding: 8px;
     width: 150px;
     margin-right: 21px;

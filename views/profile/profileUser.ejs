@@ -31,9 +31,10 @@
 
     <div class="profile-background"></div>
 
-    <div class="profile-content  ">
+    <div class="container">
 
-        <div class="personal-info">
+        <div class="profile-content personal-info ">
+
             <div class="container">
                 <div class="under-line">
                     <div class="row mb-2">
@@ -45,15 +46,15 @@
                                         <span class="image-preview__defult-text">Add Picture</span>
                                         <div class="ChangePic">
                                             <input id="addPic" type="file" accept="image/*" hidden>
-                                            
+
                                             <label for="addPic">
                                                 <svg aria-hidden='true' style='width: 20px; height: 20px;'
                                                     focusable='false' data-prefix='far' data-icon='images' role='img'
                                                     viewBox='0 0 576 512'
                                                     class='svg-inline--fa fa-images fa-w-18 fa-2x'>
                                                     <path fill='currentColor'
-                                                        d='M480 416v16c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V176c0-26.51 21.49-48 48-48h16v48H54a6 6 0 0 0-6 6v244a6 6 0 0 0 6 6h372a6 6 0 0 0 6-6v-10h48zm42-336H150a6 6 0 0 0-6 6v244a6 6 0 0 0 6 6h372a6 6 0 0 0 6-6V86a6 6 0 0 0-6-6zm6-48c26.51 0 48 21.49 48 48v256c0 26.51-21.49 48-48 48H144c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h384zM264 144c0 22.091-17.909 40-40 40s-40-17.909-40-40 17.909-40 40-40 40 17.909 40 40zm-72 96l39.515-39.515c4.686-4.686 12.284-4.686 16.971 0L288 240l103.515-103.515c4.686-4.686 12.284-4.686 16.971 0L480 208v80H192v-48z'
-                                                        ></path>
+                                                        d='M480 416v16c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V176c0-26.51 21.49-48 48-48h16v48H54a6 6 0 0 0-6 6v244a6 6 0 0 0 6 6h372a6 6 0 0 0 6-6v-10h48zm42-336H150a6 6 0 0 0-6 6v244a6 6 0 0 0 6 6h372a6 6 0 0 0 6-6V86a6 6 0 0 0-6-6zm6-48c26.51 0 48 21.49 48 48v256c0 26.51-21.49 48-48 48H144c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h384zM264 144c0 22.091-17.909 40-40 40s-40-17.909-40-40 17.909-40 40-40 40 17.909 40 40zm-72 96l39.515-39.515c4.686-4.686 12.284-4.686 16.971 0L288 240l103.515-103.515c4.686-4.686 12.284-4.686 16.971 0L480 208v80H192v-48z'>
+                                                    </path>
                                                 </svg> Change
                                             </label>
                                         </div>
@@ -87,10 +88,19 @@
                     </div>
                 </div>
             </div>
+
+            <a id="addProduct" href='/profile/addProduct'>
+                <span class="font-weight-bold mr-1"> Add Product</span>
+                <svg style="width:20px; height:20px;" viewBox="0 0 576 512">
+                    <path fill="currentColor"
+                        d="M159.88,175.82h64v64a16,16,0,0,0,16,16h64a16,16,0,0,0,16-16v-64h64a16,16,0,0,0,16-16v-64a16,16,0,0,0-16-16h-64v-64a16,16,0,0,0-16-16h-64a16,16,0,0,0-16,16v64h-64a16,16,0,0,0-16,16v64A16,16,0,0,0,159.88,175.82ZM568.07,336.13a39.91,39.91,0,0,0-55.93-8.47L392.47,415.84H271.86a16,16,0,0,1,0-32H350.1c16,0,30.75-10.87,33.37-26.61a32.06,32.06,0,0,0-31.62-37.38h-160a117.7,117.7,0,0,0-74.12,26.25l-46.5,37.74H15.87a16.11,16.11,0,0,0-16,16v96a16.11,16.11,0,0,0,16,16h347a104.8,104.8,0,0,0,61.7-20.27L559.6,392A40,40,0,0,0,568.07,336.13Z">
+                    </path>
+                </svg>
+            </a>
         </div>
     </div>
 
-    <div class="profile-body">
+    <div class="profile-body container">
         <div class="row">
             <div class=" ml-1 col-md-4 col-sm-12 col-xs-12">
                 <!-- --------------- Sidbar-Information!!!---------------------->
@@ -111,7 +121,7 @@
                                     Edit Profile</button>
                             </li>
 
-                            <li>
+                            <!-- <li>
                                 <button type="submit" class="btn btn-primary">
                                     <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="save"
                                         role="img" viewBox="0 0 448 512" class="svg-inline--fa fa-save fa-w-14 fa-2x">
@@ -121,12 +131,13 @@
                                               352H54a6 6 0 0 1-6-6V86a6 6 0 0 1 6-6h42v104c0 13.255 10.745 24 24 24h176c13.255 0 24-10.745 24-24V83.882l78.243 78.243a6 6 0 0
                                                1 1.757 4.243V426a6 6 0 0 1-6 6zM224 232c-48.523 0-88 39.477-88 88s39.477 88 88 88 88-39.477 88-88-39.477-88-88-88zm0 128c-22.056 
                                                0-40-17.944-40-40s17.944-40 40-40 40 17.944 40 40-17.944 40-40 40z"
-                                            class=""></path>
-                                    </svg>
-
-                                    Save Changs</button>
-                            </li>
-
+                                               class=""></path>
+                                            </svg>
+                                            
+                                            Save Changs</button>
+                                        </li> -->
+                                        
+                                        
                             <li class="list-group-item">
                                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="house" role="img"
                                     viewBox="0 0 576 512" class="svg-inline--fa fa-house fa-w-18 fa-2x">
@@ -196,16 +207,6 @@
 
             <div class=" col-md-7 col-sm-12 col-xs-12">
                 <% if (user.id == handcraft.id){%>
-                <a id="addProduct" class="btn btn-outline-primary mb-4 mt-2" href='/profile/addProduct'>
-                    <span class="font-weight-bold"> Add Product</span>
-                    <svg aria-hidden="true" style="width:20px; height:20px;" focusable="false" data-prefix="fas"
-                        data-icon="hand-holding-medical" role="img" viewBox="0 0 576 512"
-                        class="svg-inline--fa fa-hand-holding-medical fa-w-18 fa-2x">
-                        <path fill="currentColor"
-                            d="M159.88,175.82h64v64a16,16,0,0,0,16,16h64a16,16,0,0,0,16-16v-64h64a16,16,0,0,0,16-16v-64a16,16,0,0,0-16-16h-64v-64a16,16,0,0,0-16-16h-64a16,16,0,0,0-16,16v64h-64a16,16,0,0,0-16,16v64A16,16,0,0,0,159.88,175.82ZM568.07,336.13a39.91,39.91,0,0,0-55.93-8.47L392.47,415.84H271.86a16,16,0,0,1,0-32H350.1c16,0,30.75-10.87,33.37-26.61a32.06,32.06,0,0,0-31.62-37.38h-160a117.7,117.7,0,0,0-74.12,26.25l-46.5,37.74H15.87a16.11,16.11,0,0,0-16,16v96a16.11,16.11,0,0,0,16,16h347a104.8,104.8,0,0,0,61.7-20.27L559.6,392A40,40,0,0,0,568.07,336.13Z">
-                        </path>
-                    </svg>
-                </a>
 
                 <% } %>
                 <input id="userId" type="hidden" value="<%=user.id%>">
@@ -214,23 +215,41 @@
                 <% if(prods.length > 0) { %>
                 <div class="post-area">
                     <% for (let product of prods) { %>
-                    <div class="post-body mb-4">
+                    <div class="post-body mb-5">
+                        <div class="post">
+                            <div id="carouselExampleControls" class="post carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="post-height carousel-item active">
+                                        <img src="/<%= product.image %>" class="img-responsive">
+                                    </div>
+                                </div>
+                                <!-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a> -->
+                            </div>
+                        </div>
                         <div class="post-info">
+                            <div class="flex-grow-1 d-flex align-items-center">
                             <a href="/profile/<%=handcraft.id%>">
                                 <img src="/<%=handcraft.image%>" alt="<%=handcraft.name%>">
                                 <span><%= handcraft.name%></span>
                             </a>
-                            <a class="btn  float-right" role="button" aria-expanded="false"
-                                aria-controls="multiCollapseExample1">
-                                <svg aria-hidden="true" style="width: 20px; height: 20px;" focusable="false"
-                                    data-prefix="far" data-icon="wand-magic" role="img" viewBox="0 0 512 512"
-                                    class="svg-inline--fa fa-wand-magic fa-w-16 fa-2x">
-                                    <path fill="currentColor"
-                                        d="M80 160l26.66-53.33L160 80l-53.33-26.67L80 0 53.33 53.33 0 80l53.33 26.67L80 160zm351.99 128l-26.66 53.33L351.99 368l53.33 26.67L431.99 448l26.66-53.33L511.98 368l-53.33-26.67L431.99 288zm-208-192l16-32 32-16-32-16-16-32-16 32-32 16 32 16 16 32zm208 96c8.84 0 16-7.16 16-16v-34.11L502.02 82c13.81-15.22 13.22-38.53-1.31-53.09l-17.66-17.63c-14.5-14.52-37.84-15.08-53-1.36L157.28 256H112c-8.84 0-16 7.16-16 16v39.28l-78.53 70.84-.06.05C6.72 391.86.38 405.69.04 420.12c-.37 14.44 5.28 28.58 15.5 38.81l37.53 37.52c9.87 9.92 23.5 15.55 37.5 15.55 22.17 0 35.57-13.37 39.28-17.47L402.78 192h29.21zM94.22 462.36c-.82.91-4.23 3.24-7.22.17l-37.53-37.52c-2.97-3.01-.73-6.44.16-7.27L455.49 51.61l4.91 4.88L94.22 462.36z"
-                                        class=""></path>
+                            </div>
+                            <span class="type-item">
+                                <svg width="15" height="12" fill="#FFF" viewBox="0 0 512 512">
+                                    <path
+                                        d="M80 160l26.66-53.33L160 80l-53.33-26.67L80 0 53.33 53.33 0 80l53.33 26.67L80 160zm351.99 128l-26.66 53.33L351.99 368l53.33 26.67L431.99 448l26.66-53.33L511.98 368l-53.33-26.67L431.99 288zm-208-192l16-32 32-16-32-16-16-32-16 32-32 16 32 16 16 32zm208 96c8.84 0 16-7.16 16-16v-34.11L502.02 82c13.81-15.22 13.22-38.53-1.31-53.09l-17.66-17.63c-14.5-14.52-37.84-15.08-53-1.36L157.28 256H112c-8.84 0-16 7.16-16 16v39.28l-78.53 70.84-.06.05C6.72 391.86.38 405.69.04 420.12c-.37 14.44 5.28 28.58 15.5 38.81l37.53 37.52c9.87 9.92 23.5 15.55 37.5 15.55 22.17 0 35.57-13.37 39.28-17.47L402.78 192h29.21zM94.22 462.36c-.82.91-4.23 3.24-7.22.17l-37.53-37.52c-2.97-3.01-.73-6.44.16-7.27L455.49 51.61l4.91 4.88L94.22 462.36z">
+                                    </path>
                                 </svg>
                                 <%= product.type %>
-                            </a>
+                            </span>
                             <% if(user.id == product.userId) {%>
                             <a class="btn dropdown-toggle float-right" data-toggle="collapse"
                                 href="#multiCollapseExample2" role="button" aria-expanded="false"
@@ -240,11 +259,11 @@
                                     style="width: 20px; height: 20px;">
                                     <path fill="currentColor"
                                         d="M402.6 83.2l90.2 90.2c3.8 3.8 3.8 10 0 13.8L274.4 405.6l-92.8
-                                                    10.3c-12.4 1.4-22.9-9.1-21.5-21.5l10.3-92.8L388.8 83.2c3.8-3.8 10-3.8 13.8 0zm162-22.9l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2 0l-35.4 35.4c-3.8 3.8-3.8 10 0
-                                                    13.8l90.2 90.2c3.8 3.8 10 3.8 13.8 0l35.4-35.4c15.2-15.3 15.2-40
-                                                    0-55.2zM384 346.2V448H64V128h229.8c3.2 0 6.2-1.3 8.5-3.5l40-40c7.6-7.6 2.2-20.5-8.5-20.5H48C21.5
-                                                    64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0
-                                                    48-21.5 48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40 40c-2.2 2.3-3.5 5.3-3.5 8.5z"></path>
+                                            10.3c-12.4 1.4-22.9-9.1-21.5-21.5l10.3-92.8L388.8 83.2c3.8-3.8 10-3.8 13.8 0zm162-22.9l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2 0l-35.4 35.4c-3.8 3.8-3.8 10 0
+                                            13.8l90.2 90.2c3.8 3.8 10 3.8 13.8 0l35.4-35.4c15.2-15.3 15.2-40
+                                            0-55.2zM384 346.2V448H64V128h229.8c3.2 0 6.2-1.3 8.5-3.5l40-40c7.6-7.6 2.2-20.5-8.5-20.5H48C21.5
+                                            64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0
+                                            48-21.5 48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40 40c-2.2 2.3-3.5 5.3-3.5 8.5z"></path>
                                 </svg>
                                 Edit Post
                             </a>
@@ -264,12 +283,12 @@
                                                         class="svg-inline--fa fa-trash-alt fa-w-14 fa-2x">
                                                         <path fill="currentColor"
                                                             d="M296 432h16a8 8 0 0 0 8-8V152a8 8 0 0 0-8-8h-16a8 8 0 0
-                                                                0-8 8v272a8 8 0 0 0 8 8zm-160 0h16a8 8 0 0 0 8-8V152a8 8 0 0 0-8-8h-16a8 8 0 0 0-8 
-                                                                8v272a8 8 0 0 0 8 8zM440 64H336l-33.6-44.8A48 48 0 0 0 264 0h-80a48 48 0 0 0-38.4 
-                                                                19.2L112 64H8a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8h24v368a48 48 0 0 0 48 48h288a48 48 0 0 0 
-                                                                48-48V96h24a8 8 0 0 0 8-8V72a8 8 0 0 0-8-8zM171.2 38.4A16.1 16.1 0 0 1 184 32h80a16.1 
-                                                                16.1 0 0 1 12.8 6.4L296 64H152zM384 464a16 16 0 0 1-16 16H80a16 16 0 0 1-16-16V96h320zm-168-32h16a8
-                                                                8 0 0 0 8-8V152a8 8 0 0 0-8-8h-16a8 8 0 0 0-8 8v272a8 8 0 0 0 8 8z"></path>
+                                                        0-8 8v272a8 8 0 0 0 8 8zm-160 0h16a8 8 0 0 0 8-8V152a8 8 0 0 0-8-8h-16a8 8 0 0 0-8 
+                                                        8v272a8 8 0 0 0 8 8zM440 64H336l-33.6-44.8A48 48 0 0 0 264 0h-80a48 48 0 0 0-38.4 
+                                                        19.2L112 64H8a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8h24v368a48 48 0 0 0 48 48h288a48 48 0 0 0 
+                                                        48-48V96h24a8 8 0 0 0 8-8V72a8 8 0 0 0-8-8zM171.2 38.4A16.1 16.1 0 0 1 184 32h80a16.1 
+                                                        16.1 0 0 1 12.8 6.4L296 64H152zM384 464a16 16 0 0 1-16 16H80a16 16 0 0 1-16-16V96h320zm-168-32h16a8
+                                                        8 0 0 0 8-8V152a8 8 0 0 0-8-8h-16a8 8 0 0 0-8 8v272a8 8 0 0 0 8 8z"></path>
                                                     </svg>
                                                     Delete</button>
                                             </form>
@@ -281,15 +300,15 @@
                                                     <svg aria-hidden="true" style="width: 20px; height: 20px;"
                                                         focusable="false" data-prefix="far" data-icon="edit" role="img"
                                                         viewBox="0 0 576 512" class="svg-inline--fa fa-edit fa-w-18
-                                                                fa-2x">
+                                                        fa-2x">
                                                         <path fill="currentColor" d="M402.3 344.9l32-32c5-5
-                                                                13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 
-                                                                21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7
-                                                                    2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4
-                                                                    10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 
-                                                                    82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3
-                                                                    65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1
-                                                                    58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z"></path>
+                                                        13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 
+                                                        21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7
+                                                            2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4
+                                                            10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 
+                                                            82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3
+                                                            65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1
+                                                            58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z"></path>
                                                     </svg>
                                                     Edit</button>
                                             </a>
@@ -302,27 +321,8 @@
                             <% } %>
                         </div>
 
-                        <p><%= product.describtion %></p>
-                        <div class="post">
-                            <div id="carouselExampleControls" class="post carousel slide" data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="post-height carousel-item active">
-                                        <img src="/<%= product.image %>" class="img-responsive">
-                                    </div>
-                                </div>
-                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
-                                    data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carouselExampleControls" role="button"
-                                    data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </div>
-                        </div>
                         <div>
+                            <p><%= product.describtion %></p>
                             <p>Product Price: <%= product.price %>$</p>
                         </div>
 
@@ -375,11 +375,11 @@
 
     </div>
 
-        <!--Start Theme Block-->
+    <!--Start Theme Block-->
 
-        <%-include('../_includes/Theme Block/themeBlock.ejs')%>
+    <%-include('../_includes/Theme Block/themeBlock.ejs')%>
 
-        <!--End Theme Block-->
+    <!--End Theme Block-->
 
     <!-- Start Scroll To Top -->
 

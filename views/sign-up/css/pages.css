@@ -1,3 +1,7 @@
+body{
+    font-size: 12px;
+}
+
 /* Start Section sign in */
 ::-webkit-scrollbar{
     width: 5px;
@@ -84,9 +88,10 @@ hr{
 }
 
 .sign-up p{
-    font-family: 'Dancing Script', cursive;
-    font-size: 30px;
-    font-weight: bolder;
+    /* font-family: 'Dancing Script', cursive; */
+    font-size: 21px;
+    /* font-weight: bolder; */
+    margin: 0 0 21px 0;
 }
 
 
@@ -96,10 +101,9 @@ hr{
     margin-top: 10px;
     margin-bottom: 10px;
     color: rgb(240, 28, 28);
-    font-weight: bold;
+    /* font-weight: bold; */
     font-family: cursive;
-    font-size: 30px;
-    font-family: 'Dancing Script', cursive;
+    font-size: 21px;
 }
 
 .way{
@@ -113,9 +117,8 @@ hr{
 
 .way .user , .way .craft{
     color: #ddd;
-    font-size: 30px;
-    font-family: 'Dancing Script', cursive;
-    font-weight: bolder;
+    font-size: 21px;
+    /* font-weight: bolder; */
 }
 .way .user:hover , .way .craft:hover{
     color: #fff;
