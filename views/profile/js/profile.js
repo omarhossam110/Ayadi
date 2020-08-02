@@ -37,3 +37,16 @@ $(document).ready(function () {
 
     
 });
+
+
+
+// Start The Magnifiy 
+$('.image-maginfy').magnificPopup({
+    type: 'image',
+    closeBtnInside: false,
+    mainClass: 'mfp-with-zoom mfp-img-mobile',
+    gallery: {
+        // enabled: true
+    }
+});
+// End The Magnifiy 

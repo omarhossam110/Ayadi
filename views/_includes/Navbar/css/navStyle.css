@@ -6,7 +6,8 @@
     flex-direction: column;
 }
 .navbar .navbar-brand img{
-   width: 33px;
+   width: 65px;
+   height: 65px;
  
 }
 .navbar a{
@@ -16,6 +17,7 @@
 .navbar a.navbar-brand {
     color: var(--main);
     font-weight: bold;
+    margin-left: 1rem;
 }
 
 .navbar .dropdown .dropdown-menu a{

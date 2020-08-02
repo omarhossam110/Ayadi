@@ -21,7 +21,7 @@ exports.getHome = (req,res,next)=>{
                         prods:products,
                         user:req.session.user,
                         handcrafts:users,
-                        pageTitle: "Products"
+                        pageTitle: "Ayadi Home"
                     })  
             })
         })
@@ -143,7 +143,7 @@ exports.getCart = (req, res, next) => {
                 })
                 .then(handcrafts=>{
                     res.render('Home/cart', {
-                        pageTitle: 'Your Cart',
+                        pageTitle: 'Ayadi Cart',
                         user:req.user,
                         handcrafts:handcrafts,
                         products: products

@@ -20,7 +20,7 @@ exports.getProfile = (req,res,next)=>{
                         handcraft:handcraft,
                         userId:userId,
                         user:req.session.user,
-                        pageTitle:'Profile'
+                        pageTitle: handcraft.name
                 })
         })
     })
@@ -72,7 +72,7 @@ exports.getEditProduct = (req,res,next)=>{
                 return res.redirect('/home');
             }
             res.render('profile/editProduct', {
-                title: 'Edit Product',
+                pageTitle: 'Edit Product',
                 editing: editMode,
                 product: product,
                 user:req.session.user,
