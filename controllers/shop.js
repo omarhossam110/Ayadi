@@ -224,7 +224,7 @@ exports.getCheckout = (req, res, next) => {
                     return stripe.checkout.sessions.create({
                         payment_method_types:['card'],
                         line_items: products.map(p =>{
-                            console.log(p.price)
+                            console.log(p.describtion)
                                 return{
                                     name:p.describtion,
                                     amount :p.price * 100,
