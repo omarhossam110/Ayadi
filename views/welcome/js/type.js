@@ -1,4 +1,4 @@
-const texts = ["Discover, request and buy lots of manual labor and art pieces! Which made by the best Handicraft all over the world!"];
+const texts = ["Discover, Request and Buy lots of Art Pieces! Which made by the best Handicraft all over the world!"];
 let count = 0;
 let index= 0;
 let currentText= "" ;

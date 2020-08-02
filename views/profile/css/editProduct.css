@@ -1,4 +1,4 @@
-.profile-body .post .image-preview
+.post .image-preview
 {
     display: flex;
     justify-content: center;
@@ -7,14 +7,19 @@
     color: #ccc;
     font-size: 1.7em;
     border: 1px solid #ccc;
+    border-radius: 10px;
 }
 
-.profile-body .post .image-preview__image
+.post .image-preview__image
 {
     display: none;
 }
 
-.profile-body .post-area .post-body input[type="file"]
+.post-area .post-body input[type="file"]
 {
  display: none;
+}
+
+.post-actions span{
+    font-size: 20px;
 }
