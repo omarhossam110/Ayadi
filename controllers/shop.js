@@ -120,7 +120,7 @@ exports.getUsers = (req,res,next)=>{
             res.render('users/users',{
                 user:req.user,
                 handcrafts:users,
-                pageTitle: "Handcrafts"
+                pageTitle:"Handcrafts"
             })
         })
         .catch(err=>{
